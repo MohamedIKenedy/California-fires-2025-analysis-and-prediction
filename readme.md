@@ -89,6 +89,6 @@ View analysis: [Feature Importance Analysis](Results/feature_importance.html)
 - Computational efficiency in real-time predictions
 
 ## Acknowledgments
-[Include credits for data sources and collaborators]
+https://gis.data.cnra.ca.gov/datasets/CALFIRE-Forestry::ca-perimeters-nifc-firis-public-view
 
 Note: This research is part of ongoing work in wildfire behavior prediction. Results should be interpreted within the context of model assumptions and limitations.
