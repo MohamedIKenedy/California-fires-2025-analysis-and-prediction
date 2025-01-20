@@ -10,9 +10,7 @@ This system predicts wildfire spread patterns using weather data, historical fir
 
 The following map shows the current fire perimeter (red) and predicted spread over the next 24 hours (orange), taking into account weather conditions:
 
-```html
-<iframe src="Results/weather_enhanced_fire_prediction.html" width="100%" height="600px" frameborder="0"></iframe>
-```
+[View Weather Enhanced Fire Prediction](Results/weather_enhanced_fire_prediction.html)
 
 ### Model Performance Visualizations
 
