@@ -10,7 +10,7 @@ This system predicts wildfire spread patterns using weather data, historical fir
 
 The following map shows the current fire perimeter (red) and predicted spread over the next 24 hours (orange), taking into account weather conditions:
 
-[View Weather Enhanced Fire Prediction](https://htmlpreview.github.io/?MohamedIKenedy/California-fires-2025-analysis-and-prediction/blob/main/Results/weather_enhanced_fire_prediction.html)
+[View Weather Enhanced Fire Prediction](https://htmlpreview.github.io/MohamedIKenedy/California-fires-2025-analysis-and-prediction/blob/main/Results/weather_enhanced_fire_prediction.html)
 ### Model Performance Visualizations
 
 #### Weather Forecast Analysis
