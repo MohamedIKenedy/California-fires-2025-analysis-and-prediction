@@ -1,77 +1,94 @@
-# Weather-Enhanced Fire Predictor
+# Advanced Wildfire Spread Prediction System Using Machine Learning and Environmental Data Analysis
 
-## Overview
+## Research Overview
+This study presents a sophisticated predictive modeling system for wildfire behavior analysis, integrating multidimensional environmental data with machine learning algorithms to forecast fire spread patterns. The system employs a hybrid approach combining SARIMA models for weather prediction and XGBoost for spread dynamics.
 
-This system predicts wildfire spread patterns using weather data, historical fire perimeters, and machine learning. It generates interactive visualizations of current fire perimeters, predicted spread patterns, and model performance metrics.
+## Methodology
 
-## Visualizations
+### Data Sources
+- **Fire Perimeter Data**: Historical California fire perimeters from NIFC and FIRIS
+- **Meteorological Data**: High-resolution weather parameters (2023-2025)
+- **Environmental Indices**: Derived fire danger and drought indices
 
-### Fire Prediction Map
+### Model Architecture
+1. **Weather Prediction Component**
+   - SARIMA (Seasonal AutoRegressive Integrated Moving Average)
+   - Temporal resolution: Hourly forecasts
+   - Key parameters: Temperature, humidity, wind velocity, pressure gradients
 
-The following map shows the current fire perimeter (red) and predicted spread over the next 24 hours (orange), taking into account weather conditions:
+2. **Fire Spread Prediction**
+   - Algorithm: XGBoost Regressor
+   - Feature engineering: 12 environmental and temporal variables
+   - Optimization: Early stopping with cross-validation
 
-[View Weather Fire Prediction](https://github.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/blob/main/Results/weather_enhanced_fire_prediction.html)
+### Evaluation Metrics
+- R² Score
+- Root Mean Square Error (RMSE)
+- Mean Absolute Percentage Error (MAPE)
+- Cross-validation scores
 
+## Results Visualization
 
-![Weather Enhanced Fire Prediction](https://raw.githubusercontent.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/main/Results/map_preview.png)
+### Interactive Fire Spread Analysis
+Current perimeter analysis and 24-hour spread projection:
 
+[View Dynamic Fire Prediction Model](https://mohamedkenedy.github.io/California-fires-2025-analysis-and-prediction/Results/weather_enhanced_fire_prediction.html)
 
-### Model Performance Visualizations
+![Model Output Visualization](https://raw.githubusercontent.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/main/Results/map_preview.png)
 
-#### Weather Forecast Analysis
+### Model Performance Analytics
 
-Time series comparison of predicted vs actual fire danger indices:
+#### Meteorological Forecast Validation
+- Time series analysis of predicted vs observed fire danger indices
+- Confidence intervals and error margins
+- Seasonal decomposition metrics
 
-```html
-<iframe src="Results/weather_forecast_performance.html" width="100%" height="500px" frameborder="0"></iframe>
-```
+View detailed analysis: [Weather Forecast Performance](Results/weather_forecast_performance.html)
 
-#### Weather Prediction Accuracy
+#### Spread Prediction Accuracy
+- Spatial accuracy assessment
+- Temporal evolution analysis
+- Error distribution patterns
 
-Scatter plot showing the correlation between predicted and actual weather conditions:
+View validation metrics: [Spread Prediction Accuracy](Results/spread_prediction_accuracy.html)
 
-```html
-<iframe src="Results/weather_prediction_accuracy.html" width="100%" height="500px" frameborder="0"></iframe>
-```
+#### Variable Importance Analysis
+Quantitative assessment of predictor variables' influence on model outcomes:
+- Primary environmental factors
+- Temporal dependencies
+- Interaction effects
 
-#### Fire Spread Prediction Accuracy
+View analysis: [Feature Importance Analysis](Results/feature_importance.html)
 
-Analysis of the spread prediction model's performance:
+## Technical Implementation
 
-```html
-<iframe src="Results/spread_prediction_accuracy.html" width="100%" height="500px" frameborder="0"></iframe>
-```
+### System Requirements
+- Python 3.8+
+- Key Dependencies:
+  - geopandas
+  - xgboost
+  - statsmodels
+  - scikit-learn
+  - folium
 
-#### Feature Importance
+### Computational Parameters
+- Training data temporal range: 2023-2025
+- Spatial resolution: Variable based on fire perimeter data
+- Forecast horizon: 24 hours
+- Model update frequency: Hourly
 
-Visualization of the most influential factors in spread prediction:
+### Usage Protocol
+1. Initialize environmental variable configuration
+2. Execute data preprocessing pipeline
+3. Train prediction models
+4. Generate visualization outputs
 
-```html
-<iframe src="Results/feature_importance.html" width="100%" height="500px" frameborder="0"></iframe>
-```
+## Limitations and Future Work
+- Current model assumes uniform fuel distribution
+- Weather data temporal resolution constraints
+- Computational efficiency in real-time predictions
 
-## Usage Instructions
+## Acknowledgments
+[Include credits for data sources and collaborators]
 
-To view these visualizations:
-
-1. Run the prediction model using the main script
-2. The HTML files will be generated in your working directory
-3. Open this README in a web browser to see the interactive visualizations
-4. Each visualization can be interacted with independently:
-   - Zoom and pan the fire prediction map
-   - Hover over data points in the performance plots
-   - Click legend items to toggle different data series
-   - Use the time slider in the weather forecast visualization
-
-## Notes
-
-- The fire prediction map updates in real-time with new weather data
-- All visualizations are interactive and support mouse/touch interactions
-- The maps require an active internet connection for tile loading
-- Performance metrics are updated with each model run
-
-## Technical Requirements
-
-- Modern web browser with JavaScript enabled
-- Internet connection for map tiles
-- Recommended minimum screen resolution: 1024x768
+Note: This research is part of ongoing work in wildfire behavior prediction. Results should be interpreted within the context of model assumptions and limitations.
