@@ -6,7 +6,7 @@
 ## Research Overview
 This study presents a sophisticated predictive modeling system for wildfire behavior analysis, integrating multidimensional environmental data with machine learning algorithms to forecast fire spread patterns. The system employs a hybrid approach combining SARIMA models for weather prediction and XGBoost for spread dynamics.
 
-##### Note that, this is a first draft and still needs some improvements. You are welcome to contribute and I would encourage you to do so !!!
+### Note that, this is a first draft and still needs some improvements. You are welcome to contribute and I would encourage you to do so !!!
 
 ## Methodology
 
