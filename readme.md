@@ -1,6 +1,7 @@
 # Advanced Wildfire Spread Prediction System Using Machine Learning and Environmental Data Analysis
-![Model Output Visualization](https://raw.githubusercontent.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/main/Results/CA_Fires.png)
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/main/Results/CA_Fires.png" alt="Model Output Visualization">
+</p>
 
 ## Research Overview
 This study presents a sophisticated predictive modeling system for wildfire behavior analysis, integrating multidimensional environmental data with machine learning algorithms to forecast fire spread patterns. The system employs a hybrid approach combining SARIMA models for weather prediction and XGBoost for spread dynamics.
