@@ -13,7 +13,7 @@ The following map shows the current fire perimeter (red) and predicted spread ov
 [View Weather Fire Prediction](https://github.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/blob/main/Results/weather_enhanced_fire_prediction.html)
 
 
-[View Weather Enhanced Fire Prediction preview](https://github.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/blob/main/Results/map_preview.png)
+![Weather Enhanced Fire Prediction](https://raw.githubusercontent.com/MohamedIKenedy/California-fires-2025-analysis-and-prediction/main/Results/map_preview.png)
 
 
 ### Model Performance Visualizations
